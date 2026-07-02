@@ -135,8 +135,8 @@
 
 result=1
 i=1
-number=int(input("Enter an integer:"))
+number=int(input("Enter an integer:")) #ferz eliyekki 5 girdik
 while(i<=number):
     result*=i
     i+=1
-print(f"{number}!={result}")    
+print(f"{number}!={result}")    #netice 5!=120
