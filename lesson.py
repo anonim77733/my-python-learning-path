@@ -1,142 +1,196 @@
-# i=0
-# while(i<11):   
-#     print(i," ")
-#     i +=1
-# print("\nDone") #netice alt alta 0 1 2 3 4 5 6 7 8 9 10
+##FOR LOOP
 
-# i=0
-# while(i<11):
-#     i+=1
-#     print(i,end=" ")
-# print("\nDone")    #netice 1 2 3 4 5 6 7 8 9 10 11
+# fruits=["grape","orange","strawbery","cherry","melon"]
 
-# i=1
-# while(i<=7):
-#     print(i,end=" ")
-#     i+=1
-#     if(i==4):
-#         break
-# print("\nDone")    #1 2 3 done 
+# for item in fruits:
+#     print(item,end=" ")   #grape orange strawbery cherry melon
 
- ##ENDLESSS!!!!
-# i=1
-# while(i<=7):
-  
-#     print(i,end=" ")
-#     if(i==4):
-#         continue
-#     i+=1        #burda ini asagida artiririg deye 1 2 3 4 4 4 4 .....sonsuz olur cunki if den sora ancag 4 e baxir ve 4 de kicikdi deye sonsuza girir
-#                 #bunu duzeltmek ucun ini yuxariya yazaciq
-# print("\nDone")    
-
-
-# i=1
-# while(i<=7):
-#     i+=1
-#     print(i,end=" ")
-#     if(i==4):
-#         continue 
-# print("\nDone")      #netice 2 3 4 5 6 7 8 amma printi if sertinnen sora yazsa idik 4 olmuyacagdi meselen onuda eliyek
-
-# i=1
-# while(i<=7):
-#     i+=1
-#     if(i==4):
-#         continue
-#     print(i,end=" ")  #netice 2 3 5 6 7 8 burda uje 4 den sora davam edir yazdirmadan cunki sertimiz continue-dir
-# print("\nDone")       #8 de ona gore yazilirki 7 beraberdi sora onu artirir 8 yazir 8 ama boyukdu deye dovreye gire bilmir
-
-##ELSE ILE WHILE
-
-# i=1
-# while(i<=7):
-#     print(i,end=" ")
-#     i+=1
-# else:
-#     print(f"\n i({i}) variable is no longer than 7") 
-# print("While loop is over")         #1 2 3 4 5 6 7 
-#                                       #i(8) variable is no longer than 7
-#                                     #While loop is over
-
-# ##LISTLERDE WHILE
-# myNumbers=[34,19,45,78,4,66]
-# i=0                            #0 deyirik cunki 0ci indexden baslasin
-# while(i<len(myNumbers)):       #burdada uzunlugu 6 olduguna gore i<6 olmus olur eslinde
-#     print(myNumbers[i])
-#     i+=1                        #netice alt alta 34 19 45 78 4 66
-
-# i=70
-# while(i>=0):
-#     print(i,end=" ")
-#     i-=5               #70 65 60 55 50 45 40 35 30 25 20 15 10 5 0 
-
-
-
-
-
-#{
-
-# myNumbers=[]
-# i=0                                    
-# while(i<7):
-#     input_number=int(input("Enter an integer:"))
-#     myNumbers.append(input_number)
-#     i+=1
-
-# myNumbers.sort()  
-# print(myNumbers)    #netice [11, 33, 44, 55, 66, 77, 99]  #isdifadecinin elave elediyi
-
-#burda ne elemisik olduq bos list yaratdig sora yene indexe gore 0dan basladiq isdifadecinin yazdigi reqemleri aldiq ve listimize elave eledik
-#i her defesinde 1 artdigi ucun isdifadeci 7 olana kimi davam edecek ve 7 uzunlugda list yaratmis olacaq
-
-#eger neticeni list seklinde gorsetmek isdemesek bunu bele etmek lazimdi(esl is muhiti):
-
-# myNumbers=[]
-# i=0                                    
-# while(i<7):
-#     input_number=int(input("Enter an integer:"))
-#     myNumbers.append(input_number)
-#     i+=1
-# myNumbers.sort()  
-# x=0
-# while(x<7):
-#     print(myNumbers[x],end=" ")
-#     x+=1                             #netice uje 11 33 44 55 66 77 99
+#demeli burda coxlu melumatlar olsa olari tek tek cagirmiyaq deye for dongusunnen isdifade eliyiriy
+# item burda bizim verdiyim her hansisa variable ola biler icine atdigi ucun
     
-#}
+# fruits=["grape","orange","strawbery","cherry","melon"]
+# i=0
+# for item in fruits:
+#     print(i,".index=",item)
+#     i+=1     #netice  # 0 .index= grape
+#                       # 1 .index= orange
+#                       # 2 .index= strawbery
+#                       # 3 .index= cherry
+#                       # 4 .index= melon
+
+
+#burda tek list yox hemcinin tuple dictionary string ve s hamisinda for olar
+# text="Python"
+# for item in text:
+#     print(item,end=" ")   #P y t h o n
 
 
 
-#{
-# ##tek ve cut reqem yazdirma 
-
-# start_number=int(input("Enter The Start Number:"))   #ferz eliyekki 0 dedik
-# end_number=int(input("Enter The End Number:"))       #ferz eliyekki 10 dedik
-# while(start_number<end_number):
-#     if(start_number %2 ==0 or start_number %2 !=0):
-#         print(start_number,end=" ")
-#         start_number+=1                              #netice 0 1 2 3 4 5 6 7 8 9
-
-# #burda isdifadeciden aldigimiz baslama bitme saylarini donguye saldiq ve ededlerin 2 ye bolunmesinnen qaligina gore 0 olsa cut olmasa tek olur        
-
-#}
+# fruits=["grape","orange","strawbery","cherry","melon"]
+# for item in fruits:
+#     print(item,end=" ")
+#     if(item=="orange"):
+#         break                # netice grape orange
 
 
-# while(True):
-#     name=input("Enter Your Name:")
-#     if(name==""):
-#         continue
-#     else:
+# fruits=["grape","orange","strawbery","cherry","melon"]
+# for item in fruits:
+#     if(item=="orange"):
 #         break
-# print(f"Your name is {name}")     #isdifadeci hecne yazmadigca dongu davam edir ad yazana kimi
+#     print(item,end=" ")      #netice grape cunki orangeden sora qirdi dongunu
 
 
-##faktoryal hesablayan pragram
+# fruits=["grape","orange","strawbery","cherry","melon"]
+# for item in fruits:
+#     if(item=="orange"):
+#         continue
+#     print(item,end=" ")        #  grape strawbery cherry melon
 
-result=1
-i=1
-number=int(input("Enter an integer:"))
-while(i<=number):
-    result*=i
-    i+=1
-print(f"{number}!={result}")    
+
+##RANGE IN FOR
+
+# for numbers in range(8):
+#     print(numbers,end=" ")     #0 1 2 3 4 5 6 7 
+
+# for numbers in range(1,19,2):
+#     print(numbers,end=" ")       #1 3 5 7 9 11 13 15 17
+
+# for numbers in range(8):
+#     print(numbers,end=" ")
+# else:
+#     print("\nFor loop finished!")    #0 1 2 3 4 5 6 7 
+#                                      #For loop finished!
+
+# number=int(input("Enter an integer:"))
+# for item in  range(number):
+#     if(item %2 !=0):
+#         continue
+#     print(item,end=" ")
+    
+# else:
+#     print("\nFor Loop is finished!")
+
+    
+# for item in range(11):
+#     if(item==5):
+#         pass                  #burda pass ve ya ... deyerek kecdire bilirik ona gorede netice 0 1 2 3 4 6 7 8 9 10 olur 5 i yazmir
+#     else:
+#         print(item,end=" ")
+
+# else:
+#     print("\nFor Loop is finished.")
+
+
+##DONGU ICINDE DONGU 
+
+# adjectives=["red","big","tasty"]
+# fruits=["grape","strawbery","cherry"]
+# for outer in adjectives:     #outer col demeydi inner ic demeydi
+#     for inner in fruits:
+#         print(outer,inner)  #burda ne eledik demeli adjectivdeki red outer icine girdi ve donguye daxil oldu yazildi sora
+                            #fruitsdeki grape redin yanina yazildi sora fruitsdekiler bitmediyi ucun red tekrar yazilir ve strawberry yazilir
+                            #ve bu qaydada fruitsin ici bitennen sora dongu bigi alir eyni qaydada yene yazir
+
+# red grape
+# red strawbery
+# red cherry
+# big grape
+# big strawbery
+# big cherry
+# tasty grape
+# tasty strawbery
+# tasty cherry    
+
+
+##LIST ICINDEKI LISTLERIN DONGUSU
+
+# myNumbers=[        #bu eyni seydi myNumbers=[[20,15],[35,40],[5,19]] 
+#     [20,15],
+#     [35,40],
+#     [5,19]
+#     ]
+
+# for item1,item2 in myNumbers:              #eger 20,15,6 yeni uc sira olsa idi for item1,item2,item3 yazmaliyiq       
+#     print(f"{item1},{item2}")    #netice 20,15
+#                                  #       35,40
+#                                 #        5,19
+
+# myNumbers=[
+#     [20,15,6],
+#     [35,40,17],
+#     [5,19,31]
+#     ]
+
+
+
+# for item1,item2,item3 in myNumbers:
+#     print(f"{item1},{item2},{item3}")
+
+
+
+##ENUMERATE
+
+# fruits=["grape","orange","strawbery","cherry","melon","pineapple","watermelon","apple"]
+
+# for index,item in enumerate(fruits):    #indexle birlikde enumerate siradakilarin indexini yapisdirir yanina
+#     print(f"{index}-{item}")            #netice 0-grape
+# #                                               1-orange
+# #                                               2-strawbery
+# #                                               3-cherry
+# #                                               4-melon
+# #                                               5-pineapple
+# #                                               6-watermelon
+# #                                               7-apple
+
+# fruits=["grape","orange","strawbery","cherry","melon","pineapple","watermelon","apple"]
+# print(list(enumerate(fruits)))
+##[(0, 'grape'), (1, 'orange'), (2, 'strawbery'), (3, 'cherry'), (4, 'melon'), (5, 'pineapple'), (6, 'watermelon'), (7, 'apple')]
+
+# names=["Rustem","Eli"]
+# ages=[25,30]
+# print(list(zip(names,ages)))
+#[('Rustem', 25), ('Eli', 30)]  iki ayri listi birlesdirir zip. 2 listi birlesdirib tuple edir 
+
+
+# names=["Rustem","Eli"]
+# ages=[25,30]
+# for name,age in zip(names,ages):
+#     print(f"{name} is {age} years old")
+#Rustem is 25 years old
+#Eli is 30 years old    
+ 
+
+
+##NUMBER GUESSING GAME
+import random
+random_number=random.randint(1,100)
+
+chance=5         #tapma sansi
+score=100        #baslangic skoru
+attempt_count=0  #yoxlama sayi
+
+print("Guess a number between 1 and 100.")
+print(f"Your starting score is {score}.")
+
+while(chance>0):
+    guess=int(input("Enter your guess:"))
+    attempt_count+=1
+    if(guess<1 or guess>100):
+        print("Please! Enter a number between 1 and 100")
+        continue  #continue basa qaytarir dovru
+    if(guess==random_number):
+        print(f"Correct the number is {random_number} and yo found a number {attempt_count} attempts.")
+        print(f"Your total score is {score}")
+        break
+    elif(guess<random_number):
+        print("Try a higher number.")
+    else:
+        print("Try a lower number.")
+    chance-=1
+    score-=20
+    if(chance>0):
+        print(f"Your remaining attempts:{chance}")
+        print(f"Your current score:{score}") 
+    else:
+        print("Sorry,you ran out of attempts!")
+        print(f"Your total score:{score}")           
