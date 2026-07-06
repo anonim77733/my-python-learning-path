@@ -46,6 +46,7 @@
 #         continue
 #     print(item,end=" ")        #  grape strawbery cherry melon
 
+<<<<<<< HEAD
 
 ##RANGE IN FOR
 
@@ -194,3 +195,12 @@ while(chance>0):
     else:
         print("Sorry,you ran out of attempts!")
         print(f"Your total score:{score}")           
+=======
+result=1
+i=1
+number=int(input("Enter an integer:")) #ferz eliyekki 5 girdik
+while(i<=number):
+    result*=i
+    i+=1
+print(f"{number}!={result}")    #netice 5!=120
+>>>>>>> a3161d9603f320cd9fe668ba469851fd586ccc00
