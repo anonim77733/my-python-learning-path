@@ -1,205 +1,222 @@
-#  # Store Company
-# user_product_cost=float(input("Product Price:"))
-# user_coupon_code=input("Coupon Code:")
-
-# #correct coupon code=YAY2026 20% discount
-# #if product final cost >100 delivery 0AZN,else 5AZN delivery
-
-# coupon_code=user_coupon_code.upper().replace(" ","").strip()
-# discount=(user_product_cost-(user_product_cost*0.20))
-# final_cost_nodiscount=user_product_cost
-
-# #eger kupon duz olarsa 
-# if coupon_code =="YAY2026":
-#     print("Congratulations, you won 20% discount.")
-#     print("Discounted Price:",discount)
-
-#     if discount >=100:
-#         print("Your delivery price is free.")
-#         print("Amount to be paid:",discount)
+# while(True):
+#     name=input("Enter Your Name:")
+#     if(name==""):
+#         continue
 #     else:
-#         print("Your delivery price is 5AZN.")
-#         print("Amount to be paid:",(discount+5)) 
-# else:
-#     print("The product is registered no discount.")
-#     print("Normal Price:",final_cost_nodiscount)
+#         print(f"Your name is {name}")
+#         break
 
-#     if final_cost_nodiscount >=100:
-#         print("Your delivery price is free.")
-#         print("Amount to be paid:",final_cost_nodiscount)
+# result=1
+# i=1
+# user_input=int(input("Enter The Number:"))
+# while(i<=user_input):
+#     result*=i
+#     i+=1
+# print(f"{user_input}!={result}")  
+
+# odd_numbers=[]
+# even_numbers=[]
+
+# i=0
+
+# while(i<10):
+#     input_number=int(input("Enter an integer:"))
+#     if input_number %2 ==0:
+#         even_numbers.append(input_number)
 #     else:
-#         print("Your delivery price is 5AZN:")
-#         print("Amount to be paid:",(final_cost_nodiscount+5))             
+#         odd_numbers.append(input_number)    
+    
+#     i+=1
+    
 
 
-# #SECURITY CORRECT PASSWORD
-#  #correct type only words and numbers.
-# user_password=input("Your New Password:").strip().replace(" ","")
 
-# if user_password.isalnum() and not user_password.isalpha() and not user_password.isdigit():
+# odd_numbers.sort()    
+# even_numbers.sort()
 
-#     if len(user_password) >=8:
-#         print("Password is accepted.")
+# print('Odd Numbers:',*odd_numbers)
+# print('Even Numbers:',*even_numbers)
+
+
+# myList=["Mercedes","Bmw","Audi","Porsche","Ferrari","Aston Martin"]
+
+
+# myList.extend(["Hyundai","Toyota","Nissan"])
+
+# myList.insert(2,"Volvo")
+
+
+# print(myList)
+
+# text="I love to practice in python\tAnd i'm training every day."
+# print(text.index("practice"))  #10 yeni 10 cu indexden
+
+
+
+
+
+##Streaming Data
+# data_stream=[]
+# i=0
+
+# while(i<5):
+#     user_input=input("Enter a data:")
+#     data_stream.append(user_input)
+#     i+=1
+
+# data_stream.sort()
+# print("Entered Datas:",*data_stream)   #Entered Datas: AI Engineer CyberSecurity Engineer Data Engineer Programming Developer Software Engineer
+
+
+##Managing Loss
+# loss=1.0
+# while(loss>0.1):
+#     print(f"Current error value:{loss:.1f}")
+#     learning_rate=float(input("Enter a float:"))
+#     loss-=learning_rate
+# print("The model was successfully trained!")  
+
+# #netice Current error value:1.0
+# # Enter a float:0.1
+# # Current error value:0.9
+# # Enter a float:0.3
+# # Current error value:0.6
+# # Enter a float:0.5
+# # Current error value:0.1
+# # Enter a float:0.2
+# # The model was successfully trained!
+
+
+##Data temprature
+
+# while True:
+#     user_input=int(input("Enter the temperature:"))
+#     if(user_input<=0):
+#         print("System is stopped.")
+#         break
+#     elif(user_input>=50):
+#         print("Danger! An anomaly has been detected!")
+#         break
 #     else:
-#         print("Password isn't accepted,please use a minimum of 8 characters.")    
+#          print("Data is normal; the next sensor is being checked...")
+#          continue
+        
 
+##number guessing game
+
+# print("Hello! Welcome to the Number Guessing Game.Let's start")
+
+# low_number=int(input("Enter a low number:"))
+# high_number=int(input("Enter a high number:"))
+# print(f"Okey,now you have 7 chances to find number between {low_number} and {high_number}.Let's start.")
+
+# ch=7
+# gc=0
+
+# import random
+# num=random.randint(low_number,high_number)
+
+# while(gc<ch):
+#     gc+=1
+#     guess=int(input("Enter your guess:"))
+#     if(guess==num):
+#         print(f"Correct,the number is {num}.You found the number {gc} attempts.")
+#         break    
+#     elif(gc>=ch and guess !=num):
+#         print(f"Sorry,the number was {num}.Better luck nect time.")
+#         break
+#     elif(guess>num):
+#         print("Too high,try a lower number.")
+#     elif(guess<num):
+#         print("Too low,try a higher number.") 
+
+
+##sade eded tapma pragrami
+# print("Hello,Welcome to the finding prime number program!")
+# user_input=int(input("Enter an integer:"))
+# number="is prime"
+
+# if(user_input<=0):
+#     print("Please,enter a positive number greater than 0!")
+# elif(user_input>0 and user_input<2):
+#     print("The smallest prime number is 2.")
 # else:
-#     print("Password isn't correct,please don't use symbols.Only numbers and letter.")
-
-# print(user_password)        
-
-
-
-
-# user_name=input("Your Name:")
-
-# if user_name.isalpha() and len(user_name) >=3:
-#     print("Name is accepted.")
-# else:
-#     print("Name isn't correct!")
-
-# # AI ANALYSIS PROGRAM
-# objects=["cat","dog","cat","car","tree","cat"]
-
-# number_of_cats=objects.count("cat")
-# print(number_of_cats)
-
-# index_car=objects.index("car")
-# print(index_car)
-
-# objects.reverse()
-# print(objects)
-
-# #DATA CLEANING
-# users_old=[23, 45, 12, 19]
-# users_old.append(30)
-# users_old.insert(2,25)
-# print(users_old)
-
-# users_old.sort()
-
-# deleted_user=users_old.pop()
-# print(users_old)
-# print(deleted_user)
-
-# #DATA WORKS
-# sensor_A = [22.5, 23.0, 21.8]
-# sensor_B = [24.1, 23.5]
-
-# sensor_A_backup=sensor_A.copy()
-# sensor_A.extend(sensor_B)
-# sensor_B.clear()
-
-# print(sensor_A_backup)
-# print(sensor_A)
-# print(sensor_B)
+#     for i in range(2,int(user_input**0.5)+1):
+#         if(user_input %i ==0):
+#            number="is not prime"
+#            break
+    
+    
+#     if(number=="is prime"):
+#         print(f"{user_input} is prime number.")
+#     else:
+#         print(f"{user_input} is not prime number.") 
+# 
 
 
-# #DATA PREPROCESSING
-# user_comment="   THIS PRODUCT  VERY AMAZING!  I fainted with just one word.  "
-# correct_type=user_comment.lstrip().rstrip().casefold()
-# search_result=correct_type.count("amazing")
-# print(correct_type)
-# print(search_result)
 
 
-# #VALIDATION (mesajin dogrulanmasi)
-# code_1 = "AI_2026"
-# code_2="987321"
-# code_3 = "   "
-
-# if code_1.isalnum():
-#     print("code_1 is true and accepted.")    
- 
-# else:
-#     print("False,code_1 isn't accepted.")    
-
-# if code_2.isdigit():
-#     print("code_2 is true and accepted")
-# else:
-#     print("False,code2 isn't correct")   
-
-# if code_3.isspace():
-#     print("True,code_3 is only whitespace")
-# else:
-#     print("False,code_3 is not only whitespace")   
-
-   
-#Data Structuring
-# workers=["Aydan", "Emin", "Lale"]
-# external=","
-# sentence=external.join(workers)
-
-# sms="Customer ID: 4592_AZ"
-# search_result=sms.index("_AZ")
-
-# if sms.startswith("Customer"):
-#     print("Sentence begin with 'customer'.")
-
-# print(sentence)
-# print(search_result)
-
-##area of circle
-# pi=3.14159
-# radius_of_circle=float(input("Enter Radius:")) 
-# area_of_circle=pi*radius_of_circle**2
-# circumference_of_circle=2*pi*radius_of_circle
 
 
-# print(f"Area of circle={area_of_circle:.2f} \nCircumference of circle={circumference_of_circle:.2f}")
+
+# print("Hello,Welcome to the finding prime number program!")
+# i=0
+# prime=[]
+# is_not_prime=[]
 
 
-##Bitwise AND & Shift
-# pixel = 182
-# pixel &=15
-# print(pixel)
-# pixel <<=2
-# print(pixel)
+# while(i<10):
+#     number="is prime"
+#     user_input=int(input("Enter an integer:"))
+#     if(user_input<=0):
+#         print("Please,enter a positive number greater than 0!")
+#         continue
+#     elif(user_input>0 and user_input<2):
+#         print("The smallest prime number is 2.")
+#         continue
+#     else:
+#         for item in range(2,int(user_input**0.5)+1):
+#             if(user_input %item ==0):
+#                 number="is not prime"        
+#                 break
+            
+        
+#         if(number=="is prime"):
+#             prime.append(user_input)
+#         else:
+#             is_not_prime.append(user_input)
+#     i+=1        
 
-# Membership & Logical Operators
-# text="The AI model performance was amazing, not bad at all!"
+# prime.sort()
+# is_not_prime.sort() 
 
-# if "amazing" in text and "error" not in text:
-#     print("Data is relevant for model.")
-# else:
-#     print("Data is not relevant for model.") 
+# print("Prime Numbers:",*prime)
+# print("Is not Prime Numbers:",*is_not_prime)
 
- ##Assignment Operators)
-# w= 0.5
-# w**=2
-# print(w)
-# learning_rate=0.1
-# w -=learning_rate
-# print(w)
 
-# text="sağlam"
-# test=text.encode(encoding="ascii",errors="replace")
-# print(test)
 
-# text1=input("Add your text:").encode(encoding="ascii",errors="replace")
-# print(text1)
 
-##YUVARLAQLASDIRMA
 
-# my_int_1=4.798
-# my_int_2=4.253
-# rounded_int_1=round(my_int_1)
-# rounded_int_2=round(my_int_2)
-# print(rounded_int_1)  #5
-# print(rounded_int_2)  #4
 
-# rounded_int_2=round(my_int_2,1) #burdada ikinci hisseni, netice 4.3
 
-# num=-15
-# absolute_value=abs(num)
-# print(absolute_value)   #15 menfini musbet,musbete deymir
+user_input=int(input("Enter an integer:"))
+prime_numbers=[]
 
-# result_1=pow(2,3)
-# print(result_1)  # 2usdu 3 netice 8
 
-# result_2=pow(2,3,5)
-# print(result_2)   # (2 ** 3) % 5 netice 3
+    
+if(user_input<=0):
+    print("Please,enter an integer greater than 0!")
+    
+elif(user_input>0 and user_input<2):
+    print("The smallest prime number is 2.")
+    
+else:
+    prime_numbers.append(2)
+    for i in range(3,user_input+1,2):
+        for j in range(3,int(i**0.5)+1):
+            if( i % j ==0):
+                break
+        else:
+            prime_numbers.append(i)
 
-bits=35
-bits %=2
-print(bits)
+print(f"{prime_numbers}")                
