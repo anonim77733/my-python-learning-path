@@ -1,222 +1,96 @@
-# while(True):
-#     name=input("Enter Your Name:")
-#     if(name==""):
-#         continue
-#     else:
-#         print(f"Your name is {name}")
-#         break
-
-# result=1
-# i=1
-# user_input=int(input("Enter The Number:"))
-# while(i<=user_input):
-#     result*=i
-#     i+=1
-# print(f"{user_input}!={result}")  
-
-# odd_numbers=[]
-# even_numbers=[]
-
-# i=0
-
-# while(i<10):
-#     input_number=int(input("Enter an integer:"))
-#     if input_number %2 ==0:
-#         even_numbers.append(input_number)
-#     else:
-#         odd_numbers.append(input_number)    
-    
-#     i+=1
-    
-
-
-
-# odd_numbers.sort()    
-# even_numbers.sort()
-
-# print('Odd Numbers:',*odd_numbers)
-# print('Even Numbers:',*even_numbers)
-
-
-# myList=["Mercedes","Bmw","Audi","Porsche","Ferrari","Aston Martin"]
-
-
-# myList.extend(["Hyundai","Toyota","Nissan"])
-
-# myList.insert(2,"Volvo")
-
-
-# print(myList)
-
-# text="I love to practice in python\tAnd i'm training every day."
-# print(text.index("practice"))  #10 yeni 10 cu indexden
-
-
-
-
-
-##Streaming Data
-# data_stream=[]
-# i=0
-
-# while(i<5):
-#     user_input=input("Enter a data:")
-#     data_stream.append(user_input)
-#     i+=1
-
-# data_stream.sort()
-# print("Entered Datas:",*data_stream)   #Entered Datas: AI Engineer CyberSecurity Engineer Data Engineer Programming Developer Software Engineer
-
-
-##Managing Loss
-# loss=1.0
-# while(loss>0.1):
-#     print(f"Current error value:{loss:.1f}")
-#     learning_rate=float(input("Enter a float:"))
-#     loss-=learning_rate
-# print("The model was successfully trained!")  
-
-# #netice Current error value:1.0
-# # Enter a float:0.1
-# # Current error value:0.9
-# # Enter a float:0.3
-# # Current error value:0.6
-# # Enter a float:0.5
-# # Current error value:0.1
-# # Enter a float:0.2
-# # The model was successfully trained!
-
-
-##Data temprature
-
-# while True:
-#     user_input=int(input("Enter the temperature:"))
-#     if(user_input<=0):
-#         print("System is stopped.")
-#         break
-#     elif(user_input>=50):
-#         print("Danger! An anomaly has been detected!")
-#         break
-#     else:
-#          print("Data is normal; the next sensor is being checked...")
-#          continue
-        
-
-##number guessing game
-
-# print("Hello! Welcome to the Number Guessing Game.Let's start")
-
-# low_number=int(input("Enter a low number:"))
-# high_number=int(input("Enter a high number:"))
-# print(f"Okey,now you have 7 chances to find number between {low_number} and {high_number}.Let's start.")
-
-# ch=7
-# gc=0
-
-# import random
-# num=random.randint(low_number,high_number)
-
-# while(gc<ch):
-#     gc+=1
-#     guess=int(input("Enter your guess:"))
-#     if(guess==num):
-#         print(f"Correct,the number is {num}.You found the number {gc} attempts.")
-#         break    
-#     elif(gc>=ch and guess !=num):
-#         print(f"Sorry,the number was {num}.Better luck nect time.")
-#         break
-#     elif(guess>num):
-#         print("Too high,try a lower number.")
-#     elif(guess<num):
-#         print("Too low,try a higher number.") 
-
-
-##sade eded tapma pragrami
-# print("Hello,Welcome to the finding prime number program!")
 # user_input=int(input("Enter an integer:"))
-# number="is prime"
+# prime_numbers=[]
 
 # if(user_input<=0):
-#     print("Please,enter a positive number greater than 0!")
-# elif(user_input>0 and user_input<2):
+#     print("Please,enter an integer greater than 0!")
+# elif(user_input<2):
 #     print("The smallest prime number is 2.")
 # else:
-#     for i in range(2,int(user_input**0.5)+1):
-#         if(user_input %i ==0):
-#            number="is not prime"
-#            break
-    
-    
-#     if(number=="is prime"):
-#         print(f"{user_input} is prime number.")
-#     else:
-#         print(f"{user_input} is not prime number.") 
-# 
-
-
-
-
-
-
-
-# print("Hello,Welcome to the finding prime number program!")
-# i=0
-# prime=[]
-# is_not_prime=[]
-
-
-# while(i<10):
-#     number="is prime"
-#     user_input=int(input("Enter an integer:"))
-#     if(user_input<=0):
-#         print("Please,enter a positive number greater than 0!")
-#         continue
-#     elif(user_input>0 and user_input<2):
-#         print("The smallest prime number is 2.")
-#         continue
-#     else:
-#         for item in range(2,int(user_input**0.5)+1):
-#             if(user_input %item ==0):
-#                 number="is not prime"        
+#     prime_numbers.append(2)
+#     for i in range(3,user_input+1,2):
+#         for j in range(3,int(i**0.5)+1):
+#             if(i%j==0):
 #                 break
-            
-        
-#         if(number=="is prime"):
-#             prime.append(user_input)
 #         else:
-#             is_not_prime.append(user_input)
-#     i+=1        
-
-# prime.sort()
-# is_not_prime.sort() 
-
-# print("Prime Numbers:",*prime)
-# print("Is not Prime Numbers:",*is_not_prime)
+#             prime_numbers.append(i)
+#     print(f"{prime_numbers}")    
 
 
 
+# colors=["black","white","brown"]
+# cars=["mercedes","bmw","audi"]
+
+# for outer in colors:
+#     for inner in cars:
+#         print(outer,inner)
 
 
 
+## GCD and LCM
 
-user_input=int(input("Enter an integer:"))
-prime_numbers=[]
+# number1=int(input("Enter the first number:"))
+# number2=int(input("Enter the second number:"))
+# smaller=min(number1,number2)
+
+# for i in range(smaller,0,-1):
+#     if(number1 %i ==0 and number2 %i ==0):
+#         gcd=i
+#         break
+# lcm=(number1*number2)//gcd
+# print(f"The GCD of {number1} and {number2} is {gcd}")  #ebob
+# print(f"The LCM of {number1} is {number2} is {lcm}")   #ekob
 
 
+
+## GCD and LCM 
+# input_numbers = []
+# i = 0
+
+# # 1. İstifadəçidən 10 dənə düzgün ədəd alıb siyahıya yığırıq
+# while(i < 10):
+#     user_input = int(input("Enter an integer: "))
+#     if user_input <= 0:
+#         print("Please, enter an integer greater than 0!")
+#         continue
+#     else:
+#         input_numbers.append(user_input)
+#     i += 1
+
+# # --- BİLDİYİMİZ METODLA ZƏNCİRVARİ HESABLAMA ---
+
+# # Siyahının ilk elementini başlanğıc EBOB və EKOB qəbul edirik
+# current_gcd = input_numbers[0]
+# current_lcm = input_numbers[0]
+
+# # 1-ci indeksdən başlayaraq digər ədədləri növbə ilə yoxlayırıq
+# for item in input_numbers[1:]:
     
-if(user_input<=0):
-    print("Please,enter an integer greater than 0!")
+#     # --- 1. EBOB (GCD) Tapılması ---
+#     # current_gcd ilə növbəti ədədin (item) ortaq bölənini tapırıq
+#     smaller = min(current_gcd, item)
+#     gcd_found = 1 
     
-elif(user_input>0 and user_input<2):
-    print("The smallest prime number is 2.")
+#     for j in range(smaller, 0, -1):
+#         if (current_gcd % j == 0) and (item % j == 0):
+#             gcd_found = j
+#             break # Ən böyüyünü tapan kimi dövrü qırırıq
+            
+#     # --- 2. EKOB (LCM) Tapılması ---
+#     # Düstur: (a * b) // EBOB. 
+#     # Buradakı EBOB elə yenicə yuxarıda tapdığımız 'gcd_found' ədədidir!
+#     lcm_found = (current_lcm * item) // gcd_found
     
-else:
-    prime_numbers.append(2)
-    for i in range(3,user_input+1,2):
-        for j in range(3,int(i**0.5)+1):
-            if( i % j ==0):
-                break
-        else:
-            prime_numbers.append(i)
+#     # Yekun yaddaşı yeniləyirik ki, növbəti dövrdəki ədəd bunlarla müqayisə olunsun
+#     current_gcd = gcd_found
+#     current_lcm = lcm_found
 
-print(f"{prime_numbers}")                
+# # --- NƏTİCƏ ---
+# print(f"\nDaxil etdiyiniz siyahi: {input_numbers}")
+# print(f"Bütün siyahinin EBOB-u: {current_gcd}")
+# print(f"Bütün siyahinin EKOB-u: {current_lcm}")  
+    
+
+
+
+                
+        
